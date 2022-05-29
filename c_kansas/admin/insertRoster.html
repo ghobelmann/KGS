@@ -1,0 +1,58 @@
+<!DOCTYPE html>  
+<head>
+  <title>KansasGolfScores.com</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="High School, Golf, Scores, Tournaments">
+ <link rel="stylesheet" href="../../global_style/style/bootstrap.min.css">      
+    <link rel="stylesheet" href="../../global_style/style/style_nopict.css"> 
+  <script src="../../global_style/js/jquery-2.1.4.min.js"></script>
+  <script src="../../global_style/js/bootstrap.min.js"></script>
+
+</head><body>	 
+ 
+ 
+ 
+ <?php
+ //authentication for coaches to get to their pages, not for public pages.
+
+
+include_once("headera.php");
+include_once("databaseconnect.php");
+include_once("analyticstracking.php") 
+ ?> 
+
+
+<div class="container" style="width:500px;">
+  <h3 align="center">Roster Insert </h3>
+  
+  <div ng-app="myapp" ng-controller="usercontroller">
+        <label>First Name</label>
+        <input type="text" name="first_name" ng-model="firstname" class="form-control" />
+        <br>
+          <label>Last Name</label>
+        <input type="text" name="last_name" ng-model="lastname" class="form-control" />
+        <br />
+        <input type="submit" name="btnInsert" class="btn btn-info ng-click="insertData() value="ADD" />
+  </div>
+
+
+
+</body></html>
+
+
+<script>
+var app = angular.module("myapp",[]);
+app.controller("usercontroller", functon($scope, $http){
+       $scope.insertData = function(){
+          $http.post(
+              "insert.php",
+              {'firstname':$scope.firstname, 'lastname':$scope.lastname }
+          ).success(function(data) {
+                 alert(data);
+          });
+      }
+});
+
+
+</script>

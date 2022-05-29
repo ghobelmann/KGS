@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"0bf398bd64","applicationID":"2973770","transactionName":"Jl5bEhELDVoDQh1ZWQJZahUADA5ZCh9GXkUXX1QLBgoVRUldU19RAlRqEgYFDEU=","queueTime":0,"applicationTime":62,"agent":""}</script>
+<script>window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+    <link rel="icon" href="https://nextgengolf.org/wp-content/uploads/2018/06/favicon-150x150.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teams competing in Utah State Championship</title>
+    <link rel="stylesheet" media="all" href="/assets/application-0979d75d4f6eb0a2ad1e28cb98c6c911b5ad84bc8cfb86f98797394d416fc012.css" />
+    <script src="/assets/application-78138cfed0edcd5fe9c515ba50a5abfc365ce21602f5cc5421d95bb2035dc0ff.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Roboto:300|Roboto+Condensed' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" media="all" href="https://test.nextgengolf.org/wp-content/themes/theme46788/base.css" />
+    <!-- Standard iPhone -->
+    <link rel="apple-touch-icon" type="image/png" href="/touch-icon-iphone-57.png" />
+    <link rel="apple-touch-icon" type="image/png" href="/touch-icon-iphone-114.png" />
+    <link rel="apple-touch-icon" type="image/png" href="/touch-icon-iphone-72.png" />
+    <link rel="apple-touch-icon" type="image/png" href="/touch-icon-iphone-144.png" />
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="wjDYxnwS/16q0LxGgaOkIPCOMTejo2lD7KFV/CgJ8IPiPkVG290/BJSBdTIIIMZ7Rhu0UzQrXvpn2cyvdA2p7g==" />
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="container">
+          <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="container">
+    <div class="navbar-header">
+  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#app-navbar-collapse">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+  <a class="navbar-brand" href="https://test.nextgengolf.org"><img src="/assets/nextgen-only-44fd0b34f188e75302b5677c4b972d56e909e43e986a1eb37707aaff4b051fe4.png" alt="Nextgen only" /></a>
+</div>
+
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="app-navbar-collapse">
+    <ul class="nav navbar-nav">
+      <li><a href="/app/">Dashboard</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a target="_blank" href="https://nextgengolf.org/blog">Blog</a></li>
+      <li><a href="/app/high_school/tournaments/25--boys-2016-2017-utah-utah-state-championship/manage_teams">mahesh+utah@nccga.org</a></li>
+      <li><a rel="nofollow" data-method="delete" href="/app/users/sign_out">Logout</a></li>
+    </ul>
+</div><!-- /.navbar-collapse -->
+
+  </div>
+</div>
+
+          <div class="alert alert-danger alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            You are already signed in.
+          </div>
+        <div class="title">Teams competing in Utah State Championship</div>
+        <link rel="stylesheet" media="screen" href="/assets/high_school-78c9697cafaf93205aa28ee312864320999b4471723149ebe990d70e56ba43c6.css" />
+<link rel="stylesheet" media="screen" href="/assets/teams-0bdd2732a6e8c5534898c25004427f5d484ef0e0cc56a4d8e21c43f11371035f.css" />
+<script src="/assets/high_school-9483c31a49e8c77db692d45edef4a719ac29a03c016829b6087036244d23cb28.js"></script>
+<script src="/packs/team-tournament-players-663418b0c3db829b5b87.js"></script>
+
+
+  <div class="row ">
+    <h4 class="col-sm-12">1. Add teams competing in this tournament</h4>
+    <div class="col-sm-12 col-margin-bottom-1">
+      <form class="form ngg-form" action="/app/high_school/tournaments/25--boys-2016-2017-utah-utah-state-championship/add_team" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+        <input type="hidden" name="state" id="state" value="Utah" />
+        <div class="form-group row">
+          <label class="col-sm-2 control-label" for="high_school_name">High School</label>
+          <div class="col-md-7">
+            <input type="text" name="high_school_name" id="high_school_name" data-auto-focus="true" class="col-sm-12" required="required" placeholder="Start typing the high school name ..." data-autocomplete="/app/high_school/autocomplete_high_school_name" data-autocomplete-fields="{&quot;state&quot;:&quot;#state&quot;}" />
+            
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-sm-2 control-label" for="first_name">Coach First Name</label>
+          <div class="col-md-7">
+            <input type="text" name="first_name" id="first_name" class="col-sm-8" />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-sm-2 control-label" for="last_name">Coach Last Name</label>
+          <div class="col-md-7">
+            <input type="text" name="last_name" id="last_name" class="col-sm-8" />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-sm-2 control-label" for="email">Coach Email</label>
+          <div class="col-md-7">
+            <input type="text" name="email" id="email" class="col-sm-8" />
+          </div>
+        </div>
+
+        <input type="submit" name="commit" value="Add" class="btn btn-primary" data-disable-with="Add" />
+</form>    </div>
+  </div>
+  <div class="row col-margin-top-1">
+    <div class="col-sm-12">
+      <h4>2. Add players to teams</h4>
+      <div id="competing-teams" class="ngg-form">
+        <div class="row">
+          <div class="col-sm-2">Name</div>
+          <div class="col-sm-2">First Name</div>
+          <div class="col-sm-2">Last Name</div>
+          <div class="col-sm-2">Email</div>
+          <div class="col-sm-1">Grad Year</div>
+          <div class="col-sm-1"></div>
+        </div>
+          <div id="team-22" class="row col-margin-top-1">
+  <form action="/app/high_school/tournaments/25/add_player_to_tournament" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="SS8jhmG8AAQzQRhJrOf4CPwhZMPXpmL5Ojy1adLIwPLxPMlC6BttXleLCSe2vRGQZ0TcZfpbS/AUpn+hsap9YA==" />
+    <div class="col-sm-2"><strong>Ashcreek Ranch Academy
+      <br>
+      <a data-confirm="Are you sure you want to remove this team and all the players on this team?" class="lightred-fg" rel="nofollow" data-method="delete" href="/app/high_school/tournaments/25/remove_team?team_id=22">Remove Team</a></strong>
+    </div>
+    <input type="hidden" name="team_id" id="team_id" value="22" />
+    <div class="col-sm-2"><input type="text" name="first_name" id="first_name" value="" required="required" /></div>
+    <div class="col-sm-2"><input type="text" name="last_name" id="last_name" value="" required="required" /></div>
+    <div class="col-sm-2"><input type="text" name="email" id="email" value="" /></div>
+    <div class="col-sm-1"><select name="grad_year" id="grad_year" required="required"><option value="2018">2018</option>
+<option value="2019">2019</option>
+<option value="2020">2020</option>
+<option value="2021">2021</option>
+<option value="2022">2022</option>
+<option value="2023">2023</option>
+<option value="2024">2024</option></select></div>
+    <div class="col-sm-1"><input type="submit" name="commit" value="Add Player" class="btn btn-primary" data-disable-with="Add Player" /></div>
+</form></div>
+
+          <div id="team-23" class="row col-margin-top-1">
+  <form action="/app/high_school/tournaments/25/add_player_to_tournament" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="bWmJuTj4kREDuUOjj0ZT0xO/oRVoWIHQ1bU40d4zNE3VemN9sV/8S2dzUs2VHLpLiNoZs0WlqNn7L/IZvVGJ3w==" />
+    <div class="col-sm-2"><strong>Fernwood Academy
+      <br>
+      <a data-confirm="Are you sure you want to remove this team and all the players on this team?" class="lightred-fg" rel="nofollow" data-method="delete" href="/app/high_school/tournaments/25/remove_team?team_id=23">Remove Team</a></strong>
+    </div>
+    <input type="hidden" name="team_id" id="team_id" value="23" />
+    <div class="col-sm-2"><input type="text" name="first_name" id="first_name" value="" required="required" /></div>
+    <div class="col-sm-2"><input type="text" name="last_name" id="last_name" value="" required="required" /></div>
+    <div class="col-sm-2"><input type="text" name="email" id="email" value="" /></div>
+    <div class="col-sm-1"><select name="grad_year" id="grad_year" required="required"><option value="2018">2018</option>
+<option value="2019">2019</option>
+<option value="2020">2020</option>
+<option value="2021">2021</option>
+<option value="2022">2022</option>
+<option value="2023">2023</option>
+<option value="2024">2024</option></select></div>
+    <div class="col-sm-1"><input type="submit" name="commit" value="Add Player" class="btn btn-primary" data-disable-with="Add Player" /></div>
+</form></div>
+
+          <div id="team-24" class="row col-margin-top-1">
+  <form action="/app/high_school/tournaments/25/add_player_to_tournament" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="PkJjM5tBbqclGk24JIwB3xZZSNJwMTValA4/0D9FSLSGUYn3EuYD/UHQXNY+1uhHjTzwdF3MHFO6lPUYXCf1Jg==" />
+    <div class="col-sm-2"><strong>Alpine Academy
+      <br>
+      <a data-confirm="Are you sure you want to remove this team and all the players on this team?" class="lightred-fg" rel="nofollow" data-method="delete" href="/app/high_school/tournaments/25/remove_team?team_id=24">Remove Team</a></strong>
+    </div>
+    <input type="hidden" name="team_id" id="team_id" value="24" />
+    <div class="col-sm-2"><input type="text" name="first_name" id="first_name" value="" required="required" /></div>
+    <div class="col-sm-2"><input type="text" name="last_name" id="last_name" value="" required="required" /></div>
+    <div class="col-sm-2"><input type="text" name="email" id="email" value="" /></div>
+    <div class="col-sm-1"><select name="grad_year" id="grad_year" required="required"><option value="2018">2018</option>
+<option value="2019">2019</option>
+<option value="2020">2020</option>
+<option value="2021">2021</option>
+<option value="2022">2022</option>
+<option value="2023">2023</option>
+<option value="2024">2024</option></select></div>
+    <div class="col-sm-1"><input type="submit" name="commit" value="Add Player" class="btn btn-primary" data-disable-with="Add Player" /></div>
+</form></div>
+
+          <div id="team-25" class="row col-margin-top-1">
+  <form action="/app/high_school/tournaments/25/add_player_to_tournament" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="I9QJX3ieR7WvEyjwY3Ji4kxGybY/QkgmG4Ur4zX/AZebx+Ob8Tkq78vZOZ55KIt61yNxEBK/YS81H+ErVp28BQ==" />
+    <div class="col-sm-2"><strong>Benchmark School
+      <br>
+      <a data-confirm="Are you sure you want to remove this team and all the players on this team?" class="lightred-fg" rel="nofollow" data-method="delete" href="/app/high_school/tournaments/25/remove_team?team_id=25">Remove Team</a></strong>
+    </div>
+    <input type="hidden" name="team_id" id="team_id" value="25" />
+    <div class="col-sm-2"><input type="text" name="first_name" id="first_name" value="" required="required" /></div>
+    <div class="col-sm-2"><input type="text" name="last_name" id="last_name" value="" required="required" /></div>
+    <div class="col-sm-2"><input type="text" name="email" id="email" value="" /></div>
+    <div class="col-sm-1"><select name="grad_year" id="grad_year" required="required"><option value="2018">2018</option>
+<option value="2019">2019</option>
+<option value="2020">2020</option>
+<option value="2021">2021</option>
+<option value="2022">2022</option>
+<option value="2023">2023</option>
+<option value="2024">2024</option></select></div>
+    <div class="col-sm-1"><input type="submit" name="commit" value="Add Player" class="btn btn-primary" data-disable-with="Add Player" /></div>
+</form></div>
+
+      </div>
+    </div>
+  </div>
+<div class="container-fluid" id="refresh-page"></div>
+
+<div class="col-margin-top-2 row">
+  <div class="col-sm-12">
+    <h4>Manage the Team Line Up</h4>
+  </div>
+</div>
+
+<div class="row" id="root" data-val="{&quot;tourPlayers&quot;:[{&quot;tour_id&quot;:25,&quot;team_name&quot;:&quot;Ashcreek Ranch Academy&quot;,&quot;team_id&quot;:22,&quot;tour_name&quot;:&quot;Utah State Championship&quot;,&quot;golf_facility&quot;:&quot;Sky Mountain Golf Course&quot;,&quot;date&quot;:&quot;May 12, 2018 10:00 am - May 13, 2018 10:00 am&quot;,&quot;players&quot;:[153,154,155,156,157,158],&quot;disable_updates&quot;:false,&quot;all_players&quot;:[153,154,155,156,157,158],&quot;max_players_per_team&quot;:8,&quot;player_index&quot;:[1,2,3,4,5,6]},{&quot;tour_id&quot;:25,&quot;team_name&quot;:&quot;Fernwood Academy&quot;,&quot;team_id&quot;:23,&quot;tour_name&quot;:&quot;Utah State Championship&quot;,&quot;golf_facility&quot;:&quot;Sky Mountain Golf Course&quot;,&quot;date&quot;:&quot;May 12, 2018 10:00 am - May 13, 2018 10:00 am&quot;,&quot;players&quot;:[159,160,161,162,163,164],&quot;disable_updates&quot;:false,&quot;all_players&quot;:[159,160,161,162,163,164],&quot;max_players_per_team&quot;:8,&quot;player_index&quot;:[1,2,3,4,5,6]},{&quot;tour_id&quot;:25,&quot;team_name&quot;:&quot;Alpine Academy&quot;,&quot;team_id&quot;:24,&quot;tour_name&quot;:&quot;Utah State Championship&quot;,&quot;golf_facility&quot;:&quot;Sky Mountain Golf Course&quot;,&quot;date&quot;:&quot;May 12, 2018 10:00 am - May 13, 2018 10:00 am&quot;,&quot;players&quot;:[169,170,165,166,167,168],&quot;disable_updates&quot;:false,&quot;all_players&quot;:[169,170,165,166,167,168],&quot;max_players_per_team&quot;:8,&quot;player_index&quot;:[1,2,3,4,5,6]}],&quot;players&quot;:{&quot;153&quot;:{&quot;name&quot;:&quot;Nick Oswald&quot;},&quot;159&quot;:{&quot;name&quot;:&quot;Zack Duffy&quot;},&quot;169&quot;:{&quot;name&quot;:&quot;Tim Duffy&quot;},&quot;154&quot;:{&quot;name&quot;:&quot;Holden Elleston&quot;},&quot;170&quot;:{&quot;name&quot;:&quot;Alia Godek&quot;},&quot;160&quot;:{&quot;name&quot;:&quot;Tom Bissett&quot;},&quot;155&quot;:{&quot;name&quot;:&quot;Jack Tobin&quot;},&quot;165&quot;:{&quot;name&quot;:&quot;Davis Kelleher&quot;},&quot;161&quot;:{&quot;name&quot;:&quot;Trent Han&quot;},&quot;162&quot;:{&quot;name&quot;:&quot;David Carey&quot;},&quot;156&quot;:{&quot;name&quot;:&quot;Mac Lee&quot;},&quot;166&quot;:{&quot;name&quot;:&quot;Ryan Coughlin&quot;},&quot;163&quot;:{&quot;name&quot;:&quot;Jake Raye&quot;},&quot;157&quot;:{&quot;name&quot;:&quot;Kyle Mahoney&quot;},&quot;167&quot;:{&quot;name&quot;:&quot;Matt Remley&quot;},&quot;164&quot;:{&quot;name&quot;:&quot;Nick Hatton&quot;},&quot;158&quot;:{&quot;name&quot;:&quot;Drew Semons&quot;},&quot;168&quot;:{&quot;name&quot;:&quot;Will Strauss&quot;}}}"></div>
+
+      </div> <!-- outer container -->
+    </div>
+
+    
+    
+    <div class="new-footer hidden-xs">
+  <div class="row col-margin-right-0 col-margin-left-0">
+    <div class="col-md-2 col-md-offset-1">
+      <img src="https://nextgengolf.org/wp-content/themes/theme46788/images/nextgengolf-white-logo.png" class="footer-logo">
+    </div>
+  </div>
+  <div class="row col-margin-right-0 col-margin-left-0 col-top-1">
+    <div class="col-md-8 new-footer-text">
+        55 Court St, Suite 520, Boston, MA 02108
+        <img class="footer-bullet" src="/assets/orange-bullet-b73610898e6c8a06e6f5cfb16bb96d66dc2cba67870c1c56d7d6897f306e8458.png" alt="Orange bullet" />
+        (617) 453-8732
+        <img class="footer-bullet" src="/assets/orange-bullet-b73610898e6c8a06e6f5cfb16bb96d66dc2cba67870c1c56d7d6897f306e8458.png" alt="Orange bullet" />
+        info@nextgengolf.org
+    </div>
+    <div class="col-md-3 footer-social-icons">
+      <a href="http://instagram.com/nextgengolfclub" target="_blank"><img src="https://nextgengolf.org/wp-content/themes/theme46788/images/newicons/instagram.png" alt="Instagram" class="each-footer-icon"></a>
+      <a href="https://www.linkedin.com/company/nextgengolf-inc" target="_blank"><img src="https://nextgengolf.org/wp-content/themes/theme46788/images/newicons/linkedin.png" alt="Linkedin" class="each-footer-icon"></a>
+      <a href="https://www.facebook.com/nextgengolfclub" target="_blank"><img src="https://nextgengolf.org/wp-content/themes/theme46788/images/newicons/facebook.png" alt="Facebook" class="each-footer-icon"></a>
+      <a href="https://twitter.com/nextgolfer" target="_blank"><img src="https://nextgengolf.org/wp-content/themes/theme46788/images/newicons/twitter.png" alt="Twitter" class="each-footer-icon"></a>
+    </div>
+  </div>
+</div>
+
+<div class="new-footer hidden-sm hidden-md hidden-lg">
+  <div class="container">
+    <div class="row col-margin-right-0 col-margin-left-0">
+      <div class="footer-mobile-text">
+        <div class="footer-mobile-text-line">55 Court St, Suite 520</div>
+        <div class="footer-mobile-text-line">Boston, MA 02203</div>
+        <div class="footer-mobile-text-line">(617) 453-8732</div>
+        <div class="footer-mobile-text-line">info@nextgengolf.org</div>
+      </div>
+      <div class="mobile-footer-icons">
+        <a href="https://www.facebook.com/nextgengolfclub" target="_blank"><img src="https://nextgengolf.org/wp-content/themes/theme46788/images/newicons/facebook.png" alt="Facebook" class="each-footer-icon"></a>
+        <a href="https://twitter.com/nextgolfer" target="_blank"><img src="https://nextgengolf.org/wp-content/themes/theme46788/images/newicons/twitter.png" alt="Twitter" class="each-footer-icon"></a>
+        <a href="http://instagram.com/nextgengolfclub" target="_blank"><img src="https://nextgengolf.org/wp-content/themes/theme46788/images/newicons/instagram.png" alt="Instagram" class="each-footer-icon"></a>
+        <a href="https://www.linkedin.com/company/nextgengolf-inc" target="_blank"><img src="https://nextgengolf.org/wp-content/themes/theme46788/images/newicons/linkedin.png" alt="Linkedin" class="each-footer-icon"></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>

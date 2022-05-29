@@ -1,0 +1,1801 @@
+
+     
+     
+     .zero {
+  background-color: #ffffff;
+  color: black;
+}
+.eagle {
+   background-color: blue;
+   color: white;
+               border-radius: 50%;
+	       width: 20px;
+	       height: 20px
+}
+
+.birdie {
+  vertical-align: middle;
+        color: black;
+        background: #7FFFD4;
+        border: 1px solid #000000;
+        border-radius: 50%;
+	       width: 10px;
+	       height: 10px; 
+}
+
+.par {
+  background-color: #F0F8FF;
+  color: black;
+}
+
+.bogie {
+  background-color: #FFD700;
+        color: black;
+        border-radius: 3px; 
+}
+
+
+.doublebogie {
+  background-color: #DAA520;
+        border: 1px solid #FF4136;
+        border-radius: 3px; 
+}
+
+.triplebogie {
+    background-color:	#A0522D;
+    color: white;
+        border: 1px solid #FF4136;
+        border-radius: 3px; 
+}
+
+
+.other {
+   background-color: #A0522D;
+   color: white;
+        border: 1px solid #FF4136;
+        border-radius: 3px; 
+}
+
+
+
+
+
+
+
+
+@charset "UTF-8";
+body {
+  color: #333;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5em; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  line-height: 1.25em;
+  margin: 0;
+  text-rendering: optimizeLegibility; }
+
+h1 {
+  font-size: 2.25em; }
+
+h2 {
+  font-size: 2em; }
+
+h3 {
+  font-size: 1.75em; }
+
+h4 {
+  font-size: 1.5em; }
+
+h5 {
+  font-size: 1.25em; }
+
+h6 {
+  font-size: 1em; }
+
+p {
+  margin: 0 0 0.75em; }
+
+a {
+  color: #0074D9;
+  text-decoration: none;
+  -webkit-transition: color 0.1s linear;
+  -moz-transition: color 0.1s linear;
+  transition: color 0.1s linear; }
+  a:hover {
+    color: #004b8c; }
+  a:active, a:focus {
+    color: #004b8c;
+    outline: none; }
+
+hr {
+  border-bottom: 1px solid #DDD;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: 1.5em 0; }
+
+img {
+  margin: 0;
+  max-width: 100%; }
+
+abbr, acronym {
+  border-bottom: 1px dotted #DDD;
+  cursor: help; }
+
+address {
+  display: block;
+  margin: 0 0 0.75em; }
+
+hgroup {
+  margin-bottom: 0.75em; }
+
+del {
+  color: #595959; }
+
+blockquote {
+  border-left: 2px solid #DDD;
+  color: #595959;
+  margin: 1.5em 0;
+  padding-left: 0.75em; }
+
+cite {
+  color: #737373;
+  font-style: italic; }
+  cite:before {
+    content: '\2014 \00A0'; }
+
+fieldset {
+  background: #f7f7f7;
+  border: 1px solid #DDD;
+  margin: 0 0 0.75em 0;
+  padding: 1.5em; }
+
+input, label, select {
+  display: block;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em; }
+
+label {
+  font-weight: bold;
+  margin-bottom: 0.375em; }
+  label.required:after {
+    content: "*"; }
+  label abbr {
+    display: none; }
+
+textarea, input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], textarea, select[multiple=multiple] {
+  box-sizing: border-box;
+  -webkit-transition: border-color;
+  -moz-transition: border-color;
+  transition: border-color;
+  background-color: white;
+  border-radius: 0.1875em;
+  border: 1px solid #DDD;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+  margin-bottom: 0.75em;
+  padding: 0.5em 0.5em;
+  width: 100%; }
+  textarea:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, textarea:hover, select[multiple=multiple]:hover {
+    border-color: #c4c4c4; }
+  textarea:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, textarea:focus, select[multiple=multiple]:focus {
+    border-color: #0074D9;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(0, 102, 192, 0.7);
+    outline: none; }
+
+textarea {
+  resize: vertical; }
+
+input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none; }
+
+input[type="checkbox"], input[type="radio"] {
+  display: inline;
+  margin-right: 0.375em; }
+
+input[type="file"] {
+  width: 100%; }
+
+select {
+  width: auto;
+  max-width: 100%;
+  margin-bottom: 1.5em; }
+
+button, input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap; }
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+dl {
+  line-height: 1.5em;
+  margin-bottom: 0.75em; }
+  dl dt {
+    font-weight: bold;
+    margin-top: 0.75em; }
+  dl dd {
+    margin: 0; }
+
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+/*
+* Symbolset
+* www.symbolset.com
+* Copyright © 2012 Oak Studios LLC
+*
+* Upload this file to your web server
+* and place this within your <head> tags.
+* <link href="webfonts/ss-FONTNAME.css" rel="stylesheet" />
+*/
+@font-face {
+  font-family: "SSSocial";
+  src: url('../fonts/ss-social-circle.eot');
+  src: url('../fonts/ss-social-circle.eot?#iefix') format('embedded-opentype'), url('../fonts/ss-social-circle.woff') format('woff'), url('../fonts/ss-social-circle.ttf') format('truetype'), url('../fonts/ss-social-circle.svg#SSSocialCircle') format('svg');
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: "SSSocial";
+  src: url('../fonts/ss-social-regular.eot');
+  src: url('../fonts/ss-social-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/ss-social-regular.woff') format('woff'), url('../fonts/ss-social-regular.ttf') format('truetype'), url('../fonts/ss-social-regular.svg#SSSocialRegular') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+/* This triggers a redraw in IE to Fix IE8's :before content rendering. */
+html:hover [class^="ss-"] {
+  -ms-zoom: 1; }
+
+.ss-icon, .ss-icon.ss-social, .ss-icon.ss-social-circle, [class^="ss-"]:before, [class*=" ss-"]:before, [class^="ss-"][class*=" ss-social"]:before, [class*=" ss-"][class*=" ss-social"]:before, [class^="ss-"].right:after, [class*=" ss-"].right:after, [class^="ss-"][class*=" ss-social"].right:after, [class*=" ss-"][class*=" ss-social"].right:after {
+  font-family: "SSSocial";
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  white-space: nowrap;
+  /*-webkit-font-feature-settings: "liga"; Currently broken in Chrome >= v22. Falls back to text-rendering. Safari is unaffected. */
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  -o-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased; }
+
+.ss-icon.ss-social-circle, [class^="ss-"].ss-social-circle:before, [class*=" ss-"].ss-social-circle:before, [class^="ss-"].ss-social-circle.right:after, [class*=" ss-"].ss-social-circle.right:after {
+  font-weight: bold; }
+
+[class^="ss-"].right:before, [class*=" ss-"].right:before {
+  display: none;
+  content: ''; }
+
+.ss-facebook:before, .ss-facebook.right:after {
+  content: '?'; }
+
+.ss-twitter:before, .ss-twitter.right:after {
+  content: '?'; }
+
+.ss-linkedin:before, .ss-linkedin.right:after {
+  content: '?'; }
+
+.ss-googleplus:before, .ss-googleplus.right:after {
+  content: '?'; }
+
+.ss-appdotnet:before, .ss-appdotnet.right:after {
+  content: '?'; }
+
+.ss-zerply:before, .ss-zerply.right:after {
+  content: '?'; }
+
+.ss-reddit:before, .ss-reddit.right:after {
+  content: '?'; }
+
+.ss-tumblr:before, .ss-tumblr.right:after {
+  content: '?'; }
+
+.ss-wordpress:before, .ss-wordpress.right:after {
+  content: '?'; }
+
+.ss-blogger:before, .ss-blogger.right:after {
+  content: '?'; }
+
+.ss-posterous:before, .ss-posterous.right:after {
+  content: '?'; }
+
+.ss-youtube:before, .ss-youtube.right:after {
+  content: '?'; }
+
+.ss-vimeo:before, .ss-vimeo.right:after {
+  content: '?'; }
+
+.ss-flickr:before, .ss-flickr.right:after {
+  content: '?'; }
+
+.ss-instagram:before, .ss-instagram.right:after {
+  content: '?'; }
+
+.ss-fivehundredpx:before, .ss-fivehundredpx.right:after {
+  content: '?'; }
+
+.ss-pinterest:before, .ss-pinterest.right:after {
+  content: '?'; }
+
+.ss-svpply:before, .ss-svpply.right:after {
+  content: '?'; }
+
+.ss-readmill:before, .ss-readmill.right:after {
+  content: '?'; }
+
+.ss-dropbox:before, .ss-dropbox.right:after {
+  content: '?'; }
+
+.ss-pinboard:before, .ss-pinboard.right:after {
+  content: '?'; }
+
+.ss-dribbble:before, .ss-dribbble.right:after {
+  content: '?'; }
+
+.ss-behance:before, .ss-behance.right:after {
+  content: '?'; }
+
+.ss-github:before, .ss-github.right:after {
+  content: '?'; }
+
+.ss-octocat:before, .ss-octocat.right:after {
+  content: '?'; }
+
+.ss-stackoverflow:before, .ss-stackoverflow.right:after {
+  content: '?'; }
+
+.ss-paypal:before, .ss-paypal.right:after {
+  content: '?'; }
+
+.ss-kickstarter:before, .ss-kickstarter.right:after {
+  content: '?'; }
+
+.ss-foursquare:before, .ss-foursquare.right:after {
+  content: '?'; }
+
+.ss-yelp:before, .ss-yelp.right:after {
+  content: '?'; }
+
+.ss-skype:before, .ss-skype.right:after {
+  content: '?'; }
+
+.ss-rdio:before, .ss-rdio.right:after {
+  content: '?'; }
+
+.ss-spotify:before, .ss-spotify.right:after {
+  content: '?'; }
+
+.ss-lastfm:before, .ss-lastfm.right:after {
+  content: '?'; }
+
+.ss-soundcloud:before, .ss-soundcloud.right:after {
+  content: '?'; }
+
+.ss-mail:before, .ss-mail.right:after {
+  content: '?'; }
+
+.ss-like:before, .ss-like.right:after {
+  content: '??'; }
+
+.ss-rss:before, .ss-rss.right:after {
+  content: '?'; }
+
+.ss-share:before, .ss-share.right:after {
+  content: '?'; }
+
+.ss-apple:before, .ss-apple.right:after {
+  content: '?'; }
+
+.ss-microsoft:before, .ss-microsoft.right:after {
+  content: '?'; }
+
+.ss-windows:before, .ss-windows.right:after {
+  content: '?'; }
+
+.ss-android:before, .ss-android.right:after {
+  content: '?'; }
+
+.ss-blackberry:before, .ss-blackberry.right:after {
+  content: '?'; }
+
+/*
+* Symbolset
+* www.symbolset.com
+* Copyright © 2012 Oak Studios LLC
+*
+* Upload this file to your web server
+* and place this within your <head> tags.
+* <link href="webfonts/ss-standard.css" rel="stylesheet" />
+*/
+@font-face {
+  font-family: "SSStandard";
+  src: url('../fonts/ss-standard.eot');
+  src: url('../fonts/ss-standard.eot?#iefix') format('embedded-opentype'), url('../fonts/ss-standard.woff') format('woff'), url('../fonts/ss-standard.ttf') format('truetype'), url('../fonts/ss-standard.svg#SSStandard') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+/* This triggers a redraw in IE to Fix IE8's :before content rendering. */
+html:hover [class^="ss-"] {
+  -ms-zoom: 1; }
+
+.ss-icon, .ss-icon.ss-standard, [class^="ss-"]:before, [class*=" ss-"]:before, [class^="ss-"].ss-standard:before, [class*=" ss-"].ss-standard:before, [class^="ss-"].right:after, [class*=" ss-"].right:after, [class^="ss-"].ss-standard.right:after, [class*=" ss-"].ss-standard.right:after {
+  font-family: "SSStandard";
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  white-space: nowrap;
+  /*-webkit-font-feature-settings: "liga"; Currently broken in Chrome >= v22. Falls back to text-rendering. Safari is unaffected. */
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  -o-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased; }
+
+[class^="ss-"].right:before, [class*=" ss-"].right:before {
+  display: none;
+  content: ''; }
+
+.ss-cursor:before, .ss-cursor.right:after {
+  content: '?'; }
+
+.ss-crosshair:before, .ss-crosshair.right:after {
+  content: '?'; }
+
+.ss-search:before, .ss-search.right:after {
+  content: '??'; }
+
+.ss-zoomin:before, .ss-zoomin.right:after {
+  content: '?'; }
+
+.ss-zoomout:before, .ss-zoomout.right:after {
+  content: '?'; }
+
+.ss-view:before, .ss-view.right:after {
+  content: '??'; }
+
+.ss-attach:before, .ss-attach.right:after {
+  content: '??'; }
+
+.ss-link:before, .ss-link.right:after {
+  content: '??'; }
+
+.ss-move:before, .ss-move.right:after {
+  content: '?'; }
+
+.ss-write:before, .ss-write.right:after {
+  content: '?'; }
+
+.ss-writingdisabled:before, .ss-writingdisabled.right:after {
+  content: '?'; }
+
+.ss-erase:before, .ss-erase.right:after {
+  content: '?'; }
+
+.ss-compose:before, .ss-compose.right:after {
+  content: '??'; }
+
+.ss-lock:before, .ss-lock.right:after {
+  content: '??'; }
+
+.ss-unlock:before, .ss-unlock.right:after {
+  content: '??'; }
+
+.ss-key:before, .ss-key.right:after {
+  content: '??'; }
+
+.ss-backspace:before, .ss-backspace.right:after {
+  content: '?'; }
+
+.ss-ban:before, .ss-ban.right:after {
+  content: '??'; }
+
+.ss-trash:before, .ss-trash.right:after {
+  content: '?'; }
+
+.ss-target:before, .ss-target.right:after {
+  content: '?'; }
+
+.ss-tag:before, .ss-tag.right:after {
+  content: '?'; }
+
+.ss-bookmark:before, .ss-bookmark.right:after {
+  content: '??'; }
+
+.ss-flag:before, .ss-flag.right:after {
+  content: '?'; }
+
+.ss-like:before, .ss-like.right:after {
+  content: '??'; }
+
+.ss-dislike:before, .ss-dislike.right:after {
+  content: '??'; }
+
+.ss-heart:before, .ss-heart.right:after {
+  content: '?'; }
+
+.ss-halfheart:before, .ss-halfheart.right:after {
+  content: '?'; }
+
+.ss-star:before, .ss-star.right:after {
+  content: '?'; }
+
+.ss-halfstar:before, .ss-halfstar.right:after {
+  content: '?'; }
+
+.ss-sample:before, .ss-sample.right:after {
+  content: '?'; }
+
+.ss-crop:before, .ss-crop.right:after {
+  content: '?'; }
+
+.ss-layers:before, .ss-layers.right:after {
+  content: '?'; }
+
+.ss-fill:before, .ss-fill.right:after {
+  content: '?'; }
+
+.ss-stroke:before, .ss-stroke.right:after {
+  content: '?'; }
+
+.ss-phone:before, .ss-phone.right:after {
+  content: '??'; }
+
+.ss-phonedisabled:before, .ss-phonedisabled.right:after {
+  content: '?'; }
+
+.ss-rss:before, .ss-rss.right:after {
+  content: '?'; }
+
+.ss-facetime:before, .ss-facetime.right:after {
+  content: '?'; }
+
+.ss-reply:before, .ss-reply.right:after {
+  content: '?'; }
+
+.ss-send:before, .ss-send.right:after {
+  content: '?'; }
+
+.ss-mail:before, .ss-mail.right:after {
+  content: '?'; }
+
+.ss-inbox:before, .ss-inbox.right:after {
+  content: '??'; }
+
+.ss-chat:before, .ss-chat.right:after {
+  content: '??'; }
+
+.ss-ellipsischat:before, .ss-ellipsischat.right:after {
+  content: '?'; }
+
+.ss-ellipsis:before, .ss-ellipsis.right:after {
+  content: '…'; }
+
+.ss-user:before, .ss-user.right:after {
+  content: '??'; }
+
+.ss-femaleuser:before, .ss-femaleuser.right:after {
+  content: '??'; }
+
+.ss-users:before, .ss-users.right:after {
+  content: '??'; }
+
+.ss-cart:before, .ss-cart.right:after {
+  content: '?'; }
+
+.ss-creditcard:before, .ss-creditcard.right:after {
+  content: '??'; }
+
+.ss-dollarsign:before, .ss-dollarsign.right:after {
+  content: '??'; }
+
+.ss-barchart:before, .ss-barchart.right:after {
+  content: '??'; }
+
+.ss-piechart:before, .ss-piechart.right:after {
+  content: '?'; }
+
+.ss-box:before, .ss-box.right:after {
+  content: '??'; }
+
+.ss-home:before, .ss-home.right:after {
+  content: '¦'; }
+
+.ss-buildings:before, .ss-buildings.right:after {
+  content: '??'; }
+
+.ss-warehouse:before, .ss-warehouse.right:after {
+  content: '?'; }
+
+.ss-globe:before, .ss-globe.right:after {
+  content: '??'; }
+
+.ss-navigate:before, .ss-navigate.right:after {
+  content: '?'; }
+
+.ss-compass:before, .ss-compass.right:after {
+  content: '?'; }
+
+.ss-signpost:before, .ss-signpost.right:after {
+  content: '?'; }
+
+.ss-map:before, .ss-map.right:after {
+  content: '?'; }
+
+.ss-location:before, .ss-location.right:after {
+  content: '?'; }
+
+.ss-pin:before, .ss-pin.right:after {
+  content: '??'; }
+
+.ss-database:before, .ss-database.right:after {
+  content: '?'; }
+
+.ss-hdd:before, .ss-hdd.right:after {
+  content: '?'; }
+
+.ss-music:before, .ss-music.right:after {
+  content: '?'; }
+
+.ss-mic:before, .ss-mic.right:after {
+  content: '??'; }
+
+.ss-volume:before, .ss-volume.right:after {
+  content: '??'; }
+
+.ss-lowvolume:before, .ss-lowvolume.right:after {
+  content: '??'; }
+
+.ss-highvolume:before, .ss-highvolume.right:after {
+  content: '??'; }
+
+.ss-airplay:before, .ss-airplay.right:after {
+  content: '?'; }
+
+.ss-camera:before, .ss-camera.right:after {
+  content: '??'; }
+
+.ss-picture:before, .ss-picture.right:after {
+  content: '??'; }
+
+.ss-video:before, .ss-video.right:after {
+  content: '??'; }
+
+.ss-play:before, .ss-play.right:after {
+  content: '?'; }
+
+.ss-pause:before, .ss-pause.right:after {
+  content: '?'; }
+
+.ss-stop:before, .ss-stop.right:after {
+  content: '¦'; }
+
+.ss-record:before, .ss-record.right:after {
+  content: '?'; }
+
+.ss-rewind:before, .ss-rewind.right:after {
+  content: '?'; }
+
+.ss-fastforward:before, .ss-fastforward.right:after {
+  content: '?'; }
+
+.ss-skipback:before, .ss-skipback.right:after {
+  content: '?'; }
+
+.ss-skipforward:before, .ss-skipforward.right:after {
+  content: '?'; }
+
+.ss-eject:before, .ss-eject.right:after {
+  content: '?'; }
+
+.ss-repeat:before, .ss-repeat.right:after {
+  content: '??'; }
+
+.ss-replay:before, .ss-replay.right:after {
+  content: '?'; }
+
+.ss-shuffle:before, .ss-shuffle.right:after {
+  content: '??'; }
+
+.ss-book:before, .ss-book.right:after {
+  content: '??'; }
+
+.ss-openbook:before, .ss-openbook.right:after {
+  content: '??'; }
+
+.ss-notebook:before, .ss-notebook.right:after {
+  content: '??'; }
+
+.ss-newspaper:before, .ss-newspaper.right:after {
+  content: '??'; }
+
+.ss-grid:before, .ss-grid.right:after {
+  content: '?'; }
+
+.ss-rows:before, .ss-rows.right:after {
+  content: '?'; }
+
+.ss-columns:before, .ss-columns.right:after {
+  content: '?'; }
+
+.ss-thumbnails:before, .ss-thumbnails.right:after {
+  content: '?'; }
+
+.ss-filter:before, .ss-filter.right:after {
+  content: '?'; }
+
+.ss-desktop:before, .ss-desktop.right:after {
+  content: '??'; }
+
+.ss-laptop:before, .ss-laptop.right:after {
+  content: '?'; }
+
+.ss-tablet:before, .ss-tablet.right:after {
+  content: '?'; }
+
+.ss-cell:before, .ss-cell.right:after {
+  content: '??'; }
+
+.ss-battery:before, .ss-battery.right:after {
+  content: '??'; }
+
+.ss-highbattery:before, .ss-highbattery.right:after {
+  content: '?'; }
+
+.ss-mediumbattery:before, .ss-mediumbattery.right:after {
+  content: '?'; }
+
+.ss-lowbattery:before, .ss-lowbattery.right:after {
+  content: '?'; }
+
+.ss-emptybattery:before, .ss-emptybattery.right:after {
+  content: '?'; }
+
+.ss-lightbulb:before, .ss-lightbulb.right:after {
+  content: '??'; }
+
+.ss-downloadcloud:before, .ss-downloadcloud.right:after {
+  content: '?'; }
+
+.ss-download:before, .ss-download.right:after {
+  content: '?'; }
+
+.ss-uploadcloud:before, .ss-uploadcloud.right:after {
+  content: '?'; }
+
+.ss-upload:before, .ss-upload.right:after {
+  content: '?'; }
+
+.ss-fork:before, .ss-fork.right:after {
+  content: '?'; }
+
+.ss-merge:before, .ss-merge.right:after {
+  content: '?'; }
+
+.ss-transfer:before, .ss-transfer.right:after {
+  content: '?'; }
+
+.ss-refresh:before, .ss-refresh.right:after {
+  content: '?'; }
+
+.ss-sync:before, .ss-sync.right:after {
+  content: '?'; }
+
+.ss-loading:before, .ss-loading.right:after {
+  content: '?'; }
+
+.ss-wifi:before, .ss-wifi.right:after {
+  content: '?'; }
+
+.ss-connection:before, .ss-connection.right:after {
+  content: '?'; }
+
+.ss-file:before, .ss-file.right:after {
+  content: '??'; }
+
+.ss-folder:before, .ss-folder.right:after {
+  content: '??'; }
+
+.ss-quote:before, .ss-quote.right:after {
+  content: '“'; }
+
+.ss-text:before, .ss-text.right:after {
+  content: '?'; }
+
+.ss-font:before, .ss-font.right:after {
+  content: '?'; }
+
+.ss-print:before, .ss-print.right:after {
+  content: '?'; }
+
+.ss-fax:before, .ss-fax.right:after {
+  content: '??'; }
+
+.ss-list:before, .ss-list.right:after {
+  content: '?'; }
+
+.ss-layout:before, .ss-layout.right:after {
+  content: '?'; }
+
+.ss-action:before, .ss-action.right:after {
+  content: '?'; }
+
+.ss-redirect:before, .ss-redirect.right:after {
+  content: '?'; }
+
+.ss-expand:before, .ss-expand.right:after {
+  content: '?'; }
+
+.ss-contract:before, .ss-contract.right:after {
+  content: '?'; }
+
+.ss-help:before, .ss-help.right:after {
+  content: '?'; }
+
+.ss-info:before, .ss-info.right:after {
+  content: '?'; }
+
+.ss-alert:before, .ss-alert.right:after {
+  content: '?'; }
+
+.ss-caution:before, .ss-caution.right:after {
+  content: '?'; }
+
+.ss-logout:before, .ss-logout.right:after {
+  content: '?'; }
+
+.ss-plus:before, .ss-plus.right:after {
+  content: '+'; }
+
+.ss-hyphen:before, .ss-hyphen.right:after {
+  content: '-'; }
+
+.ss-check:before, .ss-check.right:after {
+  content: '?'; }
+
+.ss-delete:before, .ss-delete.right:after {
+  content: '?'; }
+
+.ss-settings:before, .ss-settings.right:after {
+  content: '?'; }
+
+.ss-dashboard:before, .ss-dashboard.right:after {
+  content: '?'; }
+
+.ss-notifications:before, .ss-notifications.right:after {
+  content: '??'; }
+
+.ss-notificationsdisabled:before, .ss-notificationsdisabled.right:after {
+  content: '??'; }
+
+.ss-clock:before, .ss-clock.right:after {
+  content: '?'; }
+
+.ss-stopwatch:before, .ss-stopwatch.right:after {
+  content: '?'; }
+
+.ss-calendar:before, .ss-calendar.right:after {
+  content: '??'; }
+
+.ss-addcalendar:before, .ss-addcalendar.right:after {
+  content: '?'; }
+
+.ss-removecalendar:before, .ss-removecalendar.right:after {
+  content: '?'; }
+
+.ss-checkcalendar:before, .ss-checkcalendar.right:after {
+  content: '?'; }
+
+.ss-deletecalendar:before, .ss-deletecalendar.right:after {
+  content: '?'; }
+
+.ss-briefcase:before, .ss-briefcase.right:after {
+  content: '??'; }
+
+.ss-cloud:before, .ss-cloud.right:after {
+  content: '?'; }
+
+.ss-droplet:before, .ss-droplet.right:after {
+  content: '??'; }
+
+.ss-flask:before, .ss-flask.right:after {
+  content: '?'; }
+
+.ss-up:before, .ss-up.right:after {
+  content: '?'; }
+
+.ss-upright:before, .ss-upright.right:after {
+  content: '?'; }
+
+.ss-right:before, .ss-right.right:after {
+  content: '?'; }
+
+.ss-downright:before, .ss-downright.right:after {
+  content: '?'; }
+
+.ss-down:before, .ss-down.right:after {
+  content: '?'; }
+
+.ss-downleft:before, .ss-downleft.right:after {
+  content: '?'; }
+
+.ss-left:before, .ss-left.right:after {
+  content: '?'; }
+
+.ss-upleft:before, .ss-upleft.right:after {
+  content: '?'; }
+
+.ss-navigateup:before, .ss-navigateup.right:after {
+  content: '?'; }
+
+.ss-navigateright:before, .ss-navigateright.right:after {
+  content: '?'; }
+
+.ss-navigatedown:before, .ss-navigatedown.right:after {
+  content: '?'; }
+
+.ss-navigateleft:before, .ss-navigateleft.right:after {
+  content: '?'; }
+
+.ss-directup:before, .ss-directup.right:after {
+  content: '?'; }
+
+.ss-directright:before, .ss-directright.right:after {
+  content: '?'; }
+
+.ss-dropdown:before, .ss-dropdown.right:after {
+  content: '?'; }
+
+.ss-directleft:before, .ss-directleft.right:after {
+  content: '?'; }
+
+.ss-retweet:before, .ss-retweet.right:after {
+  content: '?'; }
+
+/* Legacy classes */
+.ss-volumelow:before, .ss-volumelow.right:after {
+  content: '??'; }
+
+.ss-volumehigh:before, .ss-volumehigh.right:after {
+  content: '??'; }
+
+.ss-batteryhigh:before, .ss-batteryhigh.right:after {
+  content: '?'; }
+
+.ss-batterymedium:before, .ss-batterymedium.right:after {
+  content: '?'; }
+
+.ss-batterylow:before, .ss-batterylow.right:after {
+  content: '?'; }
+
+.ss-batteryempty:before, .ss-batteryempty.right:after {
+  content: '?'; }
+
+.ss-clouddownload:before, .ss-clouddownload.right:after {
+  content: '?'; }
+
+.ss-cloudupload:before, .ss-cloudupload.right:after {
+  content: '?'; }
+
+.ss-calendaradd:before, .ss-calendaradd.right:after {
+  content: '?'; }
+
+.ss-calendarremove:before, .ss-calendarremove.right:after {
+  content: '?'; }
+
+.ss-calendarcheck:before, .ss-calendarcheck.right:after {
+  content: '?'; }
+
+.ss-calendardelete:before, .ss-calendardelete.right:after {
+  content: '?'; }
+
+/* Generated by Font Squirrel (http://www.fontsquirrel.com) on September 19, 2013 */
+@font-face {
+  font-family: 'museosansregular100';
+  src: url('../fonts/museo-sans/museosans-100-webfont.eot');
+  src: url('../fonts/museo-sans/museosans-100-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/museo-sans/museosans-100-webfont.woff') format('woff'), url('../fonts/museo-sans/museosans-100-webfont.ttf') format('truetype'), url('../fonts/museo-sans/museosans-100-webfont.svg#museosansregular') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'museosansitalic100';
+  src: url('../fonts/museo-sans/museosans-100italic-webfont.eot');
+  src: url('../fonts/museo-sans/museosans-100italic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/museo-sans/museosans-100italic-webfont.woff') format('woff'), url('../fonts/museo-sans/museosans-100italic-webfont.ttf') format('truetype'), url('../fonts/museo-sans/museosans-100italic-webfont.svg#museosansitalic') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'museosansregular300';
+  src: url('../fonts/museo-sans/museosans-300-webfont.eot');
+  src: url('../fonts/museo-sans/museosans-300-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/museo-sans/museosans-300-webfont.woff') format('woff'), url('../fonts/museo-sans/museosans-300-webfont.ttf') format('truetype'), url('../fonts/museo-sans/museosans-300-webfont.svg#museosansregular') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'museosansitalic300';
+  src: url('../fonts/museo-sans/museosans-300italic-webfont.eot');
+  src: url('../fonts/museo-sans/museosans-300italic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/museo-sans/museosans-300italic-webfont.woff') format('woff'), url('../fonts/museo-sans/museosans-300italic-webfont.ttf') format('truetype'), url('../fonts/museo-sans/museosans-300italic-webfont.svg#museosansitalic') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'museosansregular500';
+  src: url('../fonts/museo-sans/museosans-500-webfont.eot');
+  src: url('../fonts/museo-sans/museosans-500-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/museo-sans/museosans-500-webfont.woff') format('woff'), url('../fonts/museo-sans/museosans-500-webfont.ttf') format('truetype'), url('../fonts/museo-sans/museosans-500-webfont.svg#museosansregular') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'museosansitalic500';
+  src: url('../fonts/museo-sans/museosans-500italic-webfont.eot');
+  src: url('../fonts/museo-sans/museosans-500italic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/museo-sans/museosans-500italic-webfont.woff') format('woff'), url('../fonts/museo-sans/museosans-500italic-webfont.ttf') format('truetype'), url('../fonts/museo-sans/museosans-500italic-webfont.svg#museosansitalic') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'museosansregular700';
+  src: url('../fonts/museo-sans/museosans-700-webfont.eot');
+  src: url('../fonts/museo-sans/museosans-700-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/museo-sans/museosans-700-webfont.woff') format('woff'), url('../fonts/museo-sans/museosans-700-webfont.ttf') format('truetype'), url('../fonts/museo-sans/museosans-700-webfont.svg#museosansregular') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'museosansitalic700';
+  src: url('../fonts/museo-sans/museosans-700italic-webfont.eot');
+  src: url('../fonts/museo-sans/museosans-700italic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/museo-sans/museosans-700italic-webfont.woff') format('woff'), url('../fonts/museo-sans/museosans-700italic-webfont.ttf') format('truetype'), url('../fonts/museo-sans/museosans-700italic-webfont.svg#museosansitalic') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'museosansregular900';
+  src: url('../fonts/museo-sans/museosans-900-webfont.eot');
+  src: url('../fonts/museo-sans/museosans-900-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/museo-sans/museosans-900-webfont.woff') format('woff'), url('../fonts/museo-sans/museosans-900-webfont.ttf') format('truetype'), url('../fonts/museo-sans/museosans-900-webfont.svg#museosansregular') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+/*! normalize.css v2.1.2 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block; }
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+audio, canvas, video {
+  display: inline-block; }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+[hidden] {
+  display: none; }
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active, a:hover {
+  outline: 0; }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+b, strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+pre {
+  white-space: pre-wrap; }
+
+/**
+ * Set consistent quote types.
+ */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+figure {
+  margin: 0; }
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+button, input, select, textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button, input {
+  line-height: normal; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+button, select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+header.navigation {
+  background-color: #3D9970;
+  border-bottom: 1px solid #2e7555;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000; }
+  header.navigation .menu-wrapper {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 9999; }
+    header.navigation .menu-wrapper::after {
+      clear: both;
+      content: "";
+      display: table; }
+    header.navigation .menu-wrapper::after {
+      clear: both;
+      content: "";
+      display: table; }
+  header.navigation .logo {
+    float: left;
+    max-height: 60px;
+    padding-left: 1em;
+    padding-right: 2em; }
+    header.navigation .logo img {
+      max-height: 60px;
+      padding: 0.8em 0; }
+  header.navigation .navigation-menu-button {
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    display: block;
+    float: right;
+    font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    font-weight: 700;
+    line-height: 60px;
+    margin: 0;
+    padding-right: 1em;
+    text-transform: uppercase; }
+    @media screen and (min-width: 53.75em) {
+      header.navigation .navigation-menu-button {
+        display: none; } }
+    header.navigation .navigation-menu-button:hover {
+      color: #fff; }
+  header.navigation .nav {
+    z-index: 9999999;
+    float: none; }
+    @media screen and (min-width: 53.75em) {
+      header.navigation .nav {
+        float: left; } }
+  header.navigation ul#navigation-menu {
+    clear: both;
+    display: none;
+    margin: 0 auto;
+    overflow: visible;
+    padding: 0;
+    width: 100%;
+    z-index: 9999; }
+    @media screen and (min-width: 53.75em) {
+      header.navigation ul#navigation-menu {
+        display: inline;
+        margin: 0;
+        padding: 0; } }
+  header.navigation ul li {
+    background: #3D9970;
+    display: block;
+    line-height: 60px;
+    overflow: hidden;
+    padding-right: 0.8em;
+    text-align: right;
+    width: 100%;
+    z-index: 9999; }
+    @media screen and (min-width: 53.75em) {
+      header.navigation ul li {
+        background: transparent;
+        display: inline;
+        line-height: 60px;
+        padding-right: 2em;
+        text-decoration: none;
+        width: auto; } }
+    header.navigation ul li a {
+      font-weight: 700;
+      color: rgba(255, 255, 255, 0.7); }
+      header.navigation ul li a:hover {
+        color: #fff; }
+  header.navigation .active-nav-item a {
+    padding-bottom: 3px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+  header.navigation li.more {
+    padding-right: 0; }
+    header.navigation li.more a {
+      padding-right: 0.8em; }
+    header.navigation li.more:hover .submenu {
+      display: block; }
+    @media screen and (min-width: 53.75em) {
+      header.navigation li.more {
+        position: relative;
+        padding-right: 0.8em; } }
+  header.navigation .submenu {
+    display: none; }
+    @media screen and (min-width: 53.75em) {
+      header.navigation .submenu {
+        position: absolute;
+        top: 1em;
+        left: -1em; } }
+    header.navigation .submenu li {
+      display: block;
+      padding-right: 0; }
+      @media screen and (min-width: 53.75em) {
+        header.navigation .submenu li {
+          line-height: 46.15385px; }
+          header.navigation .submenu li:first-child a {
+            padding-top: 1em; }
+          header.navigation .submenu li:last-child a {
+            border-bottom-left-radius: 0.1875em;
+            border-bottom-right-radius: 0.1875em;
+            padding-bottom: 0.7em; } }
+      header.navigation .submenu li a {
+        text-align: right;
+        background-color: #398e68;
+        width: 100%;
+        display: inline-block; }
+        @media screen and (min-width: 53.75em) {
+          header.navigation .submenu li a {
+            width: 12em;
+            background-color: #3D9970;
+            text-align: left;
+            padding-left: 1em; } }
+  header.navigation .navigation-tools {
+    display: block;
+    padding-right: 1em;
+    padding-left: 1em;
+    clear: both;
+    background: #505050; }
+    header.navigation .navigation-tools::after {
+      clear: both;
+      content: "";
+      display: table; }
+    @media screen and (min-width: 53.75em) {
+      header.navigation .navigation-tools {
+        background: transparent;
+        float: right;
+        clear: none; } }
+  header.navigation a.sign-up {
+    margin-top: 13px;
+    float: right;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    display: inline;
+    background: #0074D9;
+    border-radius: 0.1875em;
+    color: #fff;
+    font-size: 0.8em;
+    font-weight: 800;
+    padding: 0.4em 1em;
+    text-transform: uppercase; }
+    header.navigation a.sign-up:hover {
+      background: #0d8eff; }
+
+.footer {
+  background: #fff;
+  padding: 20px 10px;
+  width: 100%;
+  border-top: 1px solid rgba(51, 51, 51, 0.2);
+  margin-top: 300px; }
+  .footer .footer-logo {
+    margin-bottom: 1em;
+    text-align: center; }
+    .footer .footer-logo img {
+      height: 1.6em; }
+    @media screen and (min-width: 53.75em) {
+      .footer .footer-logo {
+        float: left;
+        margin-bottom: 0; } }
+  .footer ul {
+    padding-top: 0.2em;
+    margin-bottom: 1em;
+    float: left; }
+    @media screen and (min-width: 53.75em) {
+      .footer ul {
+        margin-left: 1em;
+        margin-bottom: 0; } }
+    .footer ul li {
+      padding-right: 1em;
+      font-weight: 800; }
+      @media screen and (min-width: 53.75em) {
+        .footer ul li {
+          display: inline;
+          text-align: left; } }
+      .footer ul li a {
+        color: rgba(0, 0, 0, 0.4); }
+        .footer ul li a:hover {
+          color: black; }
+  .footer .footer-secondary-links {
+    float: right; }
+    .footer .footer-secondary-links ul {
+      margin-left: 1.5em; }
+    .footer .footer-secondary-links li {
+      font-size: 0.8em;
+      font-weight: 400;
+      text-align: center; }
+  .footer .footer-social {
+    margin-top: 1em; }
+    @media screen and (min-width: 53.75em) {
+      .footer .footer-social {
+        float: right;
+        margin-top: 0; } }
+    .footer .footer-social li {
+      float: left;
+      font-size: 1em;
+      padding-right: 0.7em; }
+      .footer .footer-social li:last-child {
+        padding-right: 0; }
+      .footer .footer-social li a {
+        font-weight: bold;
+        font-size: 24px; }
+
+body {
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  color: #5e5d52;
+  background-color: white; }
+
+.container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .container::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+header {
+  text-align: center; }
+  header h1 {
+    font-family: "museo sans", sans-serif;
+    margin: 100px 0 0;
+    padding: 0;
+    font-size: 70px;
+    text-transform: uppercase;
+    letter-spacing: -1px; }
+  header p {
+    font-family: "museo sans", sans-serif;
+    margin: 0 0 20px;
+    padding: 0; }
+
+section h2 {
+  border-bottom: 5px solid #3D9970;
+  margin-bottom: 60px;
+  padding: 4px 8px; }
+
+.responsive-table {
+  width: 100%;
+  margin-bottom: 5em; }
+  .responsive-table .out, .responsive-table .in {
+    background-color: #f1f1f1; }
+  .responsive-table .total {
+    font-size: 22px;
+    font-weight: bold; }
+  @media (min-width: 53.75em) {
+    .responsive-table {
+      font-size: 0.9em; } }
+  @media (min-width: 62em) {
+    .responsive-table {
+      font-size: 1em; } }
+  .responsive-table thead {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden; }
+    @media (min-width: 53.75em) {
+      .responsive-table thead {
+        position: relative;
+        clip: auto;
+        height: auto;
+        width: auto;
+        overflow: auto; } }
+    .responsive-table thead th {
+      border: 1px solid #e1e1e1;
+      font-weight: normal;
+      text-align: center;
+      font-size: 11px; }
+      .responsive-table thead th:first-of-type {
+        border: 0; }
+      .responsive-table thead th.player {
+        border: 0; }
+  .responsive-table tbody, .responsive-table tr, .responsive-table th, .responsive-table td {
+    display: block;
+    padding: 0;
+    text-align: left;
+    white-space: normal;
+    font-weight: normal; }
+  @media (min-width: 53.75em) {
+    .responsive-table tr {
+      display: table-row; } }
+  .responsive-table th, .responsive-table td {
+    padding: 0.5em;
+    vertical-align: middle; }
+    @media (min-width: 40em) {
+      .responsive-table th, .responsive-table td {
+        padding: 0.75em 0.5em; } }
+    @media (min-width: 53.75em) {
+      .responsive-table th, .responsive-table td {
+        display: table-cell;
+        padding: 0.4em; } }
+  .responsive-table caption {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-size: 1em;
+    font-weight: bold; }
+    @media (min-width: 53.75em) {
+      .responsive-table caption {
+        margin-bottom: -30px;
+        text-align: left; } }
+    .responsive-table caption small {
+      color: #aaa;
+      font-weight: normal; }
+    .responsive-table caption span {
+      font-size: 12px;
+      font-weight: normal;
+      display: block; }
+  .responsive-table.leaderboard caption {
+    margin-bottom: -60px;
+    margin-left: 5px; }
+  .responsive-table tfoot {
+    font-size: 0.8em; }
+    @media (min-width: 62em) {
+      .responsive-table tfoot {
+        font-size: 0.9em; } }
+  @media (min-width: 53.75em) {
+    .responsive-table tbody {
+      display: table-row-group; } }
+  .responsive-table tbody tr {
+    margin-bottom: 1em;
+    border: 1px solid #ddd; }
+    @media (min-width: 15em) {
+      .responsive-table tbody tr {
+        width: 25%;
+        float: left; } }
+    @media (min-width: 53.75em) {
+      .responsive-table tbody tr {
+        display: table-row;
+        border-width: 1px;
+        float: none; } }
+    .responsive-table tbody tr:last-of-type {
+      margin-bottom: 0; }
+    .responsive-table tbody tr.highlight th, .responsive-table tbody tr.highlight td {
+      background-color: #f1f1f1; }
+  @media (min-width: 15em) {
+    .responsive-table tbody th {
+      height: 50px; } }
+  .responsive-table tbody th[scope="row"] {
+    background-color: #aaa;
+    color: white; }
+    @media (min-width: 53.75em) {
+      .responsive-table tbody th[scope="row"] {
+        background-color: transparent;
+        color: #5e5d52;
+        text-align: center;
+        font-size: 12px;
+        border-right: 1px solid #e1e1e1;
+        padding: 0; } }
+  .responsive-table tbody td {
+    text-align: center; }
+    @media (min-width: 15em) {
+      .responsive-table tbody td {
+        height: 35px;
+        border: 0;
+        border-top: 1px solid #e1e1e1;
+        border-bottom: 1px solid #e1e1e1; } }
+    @media (min-width: 40em) {
+      .responsive-table tbody td {
+        border: 1px solid #e1e1e1; } }
+    .responsive-table tbody td span {
+      vertical-align: middle;
+      display: block;
+      padding: 3px 7px; }
+      .responsive-table tbody td span.eagle, .responsive-table tbody td span.albatross, .responsive-table tbody td span.condor {
+        background-color: white;
+        border: 1px solid #2ECC40;
+        border-radius: 500px; }
+      .responsive-table tbody td span.birdie {
+        vertical-align: middle;
+        color: white;
+        background: #2ECC40;
+        border-radius: 500px; }
+      .responsive-table tbody td span.bogey {
+        background-color: #FF4136;
+        color: white;
+        border-radius: 3px; }
+      .responsive-table tbody td span.other, .responsive-table tbody td span.double-bogey, .responsive-table tbody td span.triple-bogey {
+        background-color: white;
+        border: 1px solid #FF4136;
+        border-radius: 3px; }
+    @media (min-width: 40em) {
+      .responsive-table tbody td {
+        border-bottom: 1px solid #e1e1e1; } }
+    @media (min-width: 53.75em) {
+      .responsive-table tbody td {
+        text-align: center;
+        width: 40px;
+        height: 40px; } }
+  .responsive-table tbody td[data-type=score] {
+    border-top: 1px solid #f1f1f1; }
+  .responsive-table tbody td[data-title]:before {
+    content: attr(data-title);
+    float: left;
+    font-size: 0.8em;
+    color: rgba(94, 93, 82, 0.75); }
+    @media (min-width: 40em) {
+      .responsive-table tbody td[data-title]:before {
+        font-size: 0.9em; } }
+    @media (min-width: 53.75em) {
+      .responsive-table tbody td[data-title]:before {
+content: none; } }

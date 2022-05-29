@@ -1,0 +1,114 @@
+/* dislplay background image, background.jpg */
+body {
+      background-image: url(Images/bg.jpg);
+      background-color: #FFFFFF; color: #003300;
+      font-family: Arial, Helvetica, sans-serif; 
+	   font-size: .6 em; }
+	
+/* Georgia, Times New Roman or serif font face */	
+h1 {background-color: #bb0000; color: #FFFFFF;
+		margin-bottom: 0;
+		background-image:url(images/rock.jpg);
+		background-repeat:no-repeat;
+		background-position:right;
+		padding: 20px; 
+    font-family: Georgia, Times New Roman, serif;
+    }
+		
+/* Georgia, Times New Roman or serif font face */			
+h2 { background-color:#FFFFFF; color:#003300; 
+      font-family: Georgia, Times New Roman, serif;
+      text-shadow: 1px 1px 1px #ccc; }
+/* Georgia, Times New Roman or serif font face */	
+h3 {background-color:#000000; color:#ffffff; 
+      font-family: Georgia, Times New Roman, serif;
+      text-shadow: 2px 1px 1px #000;
+      
+     }
+/*20px of padding on the left, 5px on the right, top and bottom*/
+/*Bold Text*/	
+#nav { background-color:#bb0000; color:#003300;
+       padding: 20px 5px 5px 20px; 
+	   font-weight: bold;
+	   float: left;
+	   width: 120px; }
+#nav ul { list-style-type: square;
+       margin: 0;
+	   padding-left: 0;
+	   font-size: .4 em; 
+	   }
+#nav a { text-decoration: none; }
+
+#nav a:link { color: #aaaaaa; }
+#nav a:visited { color: #cccccc; }
+#nav a:hover { color: #FFFFFF; }
+                            
+#content {
+       padding: 1px 20px 20px 30px;
+	   background-color: #ffffff;
+	   margin-left: 150px;
+      }
+
+#content img, #content video, #content embed {float: left; padding: 20px; }
+#content ul {list-style-position: inside; }
+	
+	
+	#wrapper { 
+	  background-color: #bb0000;
+    width: 80%;
+    min-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-shadow: 5px 5px 5px #000033;
+    -moz-box-shadow: 5px 5px 5px #000033;
+    box-shadow: 5px 5px 5px #000033;
+    }
+    
+    
+dt { background-color: #FFFFFF; color: #000033; }
+	
+/* Bold Font Face*/	
+.title { background-color:#FFFFFF; color:#000033; 
+          font-style: bold;
+          }
+
+td {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+th {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+    
+#address {font-size: 90%;}  
+
+  
+table { align: center; border: 1px solid #003300; width: 600px; border-spacing: 0; }
+
+.table1 { border: 2px solid #001100; width: 250px; border-spacing: 1; 
+          background-color: #ddffdd;}
+
+
+td, th { padding: 5px; border: 1px solid #003300; }
+td {text-align: center; }
+.text {text-align: left; }
+tr:nth-of-type(odd) { background-color: #dddddd; }
+
+#label { 
+		 text-align: left;
+		 }
+#input { margin-top: 10px;
+        }
+#textarea { margin-top: 10px; }
+
+#mySubmit { margin-left: 110px;
+			margin-bottom: 10px;
+			}
+
+#footer {
+      font-size: 75%;
+      font-family: Georgia, Times New Roman, Times, serif;
+      font-style: italic;
+      }
+  

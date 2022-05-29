@@ -1,0 +1,31 @@
+<table>
+	<td>
+		<tr>
+			  <h2>Week 1</h2>
+	 
+        		 <?php	
+
+				$query = "SELECT date, sum(points) as points FROM scores
+				 WHERE date = '2012-05-02' GROUP by team ORDER by points desc"; 
+				 $result = mysql_query($query) or die(mysql_error());
+	 
+
+	 
+				echo "<table border='1' width='80%'>";
+				echo "<tr><th>Team</th></tr>";
+				// keeps getting the next row until there are no more to get
+					$i = 1;
+				while($row = mysql_fetch_array( $result)) {
+
+			// Print out the contents of each row into a table
+				echo "<tr><td><center>"; 
+					echo $row['team'];
+				echo "</td>";
+				$i++;
+	
+					} 
+
+				?>
+		</tr>
+	</td>
+</table>

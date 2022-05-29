@@ -1,0 +1,276 @@
+/* dislplay background image, background.jpg */
+body {
+      background-image: url();
+      background-color: #FFFFFF; color: #003300;
+      font-family: Arial, Helvetica, sans-serif; 
+	   font-size: .6 em; }
+	
+/* Georgia, Times New Roman or serif font face */	
+h1 {background-color: #304420; color: #FFFFFF;
+		margin-bottom: 0;
+		background-image:url(images/rock.jpg);
+		background-repeat:no-repeat;
+		background-position:right;
+		padding: 20px; 
+    font-family: Georgia, Times New Roman, serif;
+    color: #ffffff;
+    }
+		
+/* Georgia, Times New Roman or serif font face */			
+h2 { background-color:#FFFFFF; color:#000000; 
+      font-family: Georgia, Times New Roman, serif;
+      text-shadow: 1px 1px 1px #ccc; }
+/* Georgia, Times New Roman or serif font face */	
+h3 {background-color:#009900; color:#ffffff; 
+      font-family: Georgia, Times New Roman, serif;
+      text-shadow: 2px 1px 1px #000;
+      width: 50%; 
+     }
+     
+     
+@media print {
+  a[href]:after {
+    content: none !important;
+  }
+}     
+     
+     
+     
+     .zero {
+  background-color: #ffffff;
+  color: black;
+}
+.eagle {
+background: #3ced3c;
+
+   color: black;
+               border-radius: 70%;
+	       width: 30px;
+	       height: 30px;
+            border: 3px solid #dddddd;
+}
+
+.birdie {
+  vertical-align: middle;
+        color: white;
+           background-color: #2ca12c;
+        border: 3px solid #dddddd;
+        border-radius: 50%;
+	       width: 10px;
+	       height: 10px; 
+}
+
+.par {
+  background-color: #FFFFFF;
+  color: black;
+        border: 3px solid #dddddd;
+}
+
+.bogie {
+  background-color: #e79d9d;
+        color: black;
+        border-radius: 4px; 
+        border: 3px solid #dddddd;
+}
+
+
+.doublebogie {
+  background-color: #e80b0b;
+  color: white;
+        border: 3px solid #dddddd;
+        border-radius: 6px; 
+}
+
+.triplebogie {
+    background-color:	#830606;
+    color: white;
+         border: 3px solid #dddddd;
+        border-radius: 6px; 
+}
+
+
+.other {
+   background-color: #000000;
+   color: white;
+        border: 3px solid #dddddd;
+        border-radius: 6px; 
+}
+
+
+
+
+  
+
+
+
+
+
+
+
+
+/*20px of padding on the left, 5px on the right, top and bottom*/
+/*Bold Text*/	
+#nav { background-color:#304420; color:#003300;
+       padding: 20px 5px 5px 20px; 
+	   font-weight: bold;
+	   float: left;
+	   width: 120px; }
+#nav ul { list-style-type: square;
+       margin: 0;
+	   padding-left: 0;
+	   font-size: .4 em; 
+	   }
+#nav a { text-decoration: none; }
+
+#nav a:link { color: #aaaaaa; }
+#nav a:visited { color: #cccccc; }
+#nav a:hover { color: #FFFFFF; }
+                            
+#content {
+
+       padding: 1px 20px 20px 30px;
+	   background-color: #ffffff;
+	   margin-left: 10px;
+      }
+
+#content img, #content video, #content embed {float: left; padding: 20px; }
+#content ul {list-style-position: inside; }
+	
+	
+	#wrapper { 
+	  background-color: #304420;
+    width: 80%;
+    min-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-shadow: 5px 5px 5px #000033;
+    -moz-box-shadow: 5px 5px 5px #000033;
+    box-shadow: 5px 5px 5px #000033;
+    }
+    
+    
+dt { background-color: #FFFFFF; color: #000033; }
+	
+/* Bold Font Face*/	
+.title { background-color:#FFFFFF; color:#000033; 
+          font-style: bold;
+          }
+
+td {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+th {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+    
+#address {font-size: 90%;}  
+
+  
+table {padding: 10; align: center; border: 1px solid #003300; width: auto; border-spacing: 0; }
+
+
+td, th { border: 1px solid #003300; }
+td {text-align: center; }
+.text {text-align: left; }
+tr:nth-of-type(odd) { background-color: #dddddd;  }
+tr:nth-of-type(even) { background-color: #ffffff  }
+#label { 
+		 text-align: left;
+		 }
+     
+
+#input { margin-top: 10px;
+        }
+#textarea { margin-top: 10px; }
+
+#mySubmit { margin-left: 110px;
+			margin-bottom: 10px;
+			}
+
+#footer {
+      font-size: 75%;
+      font-family: Georgia, Times New Roman, Times, serif;
+      font-style: italic;
+      }
+	  
+	  
+
+  
+
+.CSSTableGenerator {
+	margin:2px;padding:2px;
+	width:auto;
+	box-shadow: 7px 7px 5px #888888;
+	border:0px solid #3f7f00;
+	
+	-moz-border-radius-bottomleft:0px;
+	-webkit-border-bottom-left-radius:0px;
+	border-bottom-left-radius:0px;
+	
+	-moz-border-radius-bottomright:0px;
+	-webkit-border-bottom-right-radius:0px;
+	border-bottom-right-radius:0px;
+	
+	-moz-border-radius-topright:0px;
+	-webkit-border-top-right-radius:0px;
+	border-top-right-radius:0px;
+	
+	-moz-border-radius-topleft:0px;
+	-webkit-border-top-left-radius:0px;
+	border-top-left-radius:0px;
+}.CSSTableGenerator table{
+    border-collapse: collapse;
+        border-spacing: 0;
+	width:900px;
+	margin:2px;padding:2px;
+}.CSSTableGenerator tr:last-child td:last-child {
+	-moz-border-radius-bottomright:0px;
+	-webkit-border-bottom-right-radius:0px;
+	border-bottom-right-radius:0px;
+}
+.CSSTableGenerator table tr:first-child td:first-child {
+	-moz-border-radius-topleft:0px;
+	-webkit-border-top-left-radius:0px;
+	border-top-left-radius:0px;
+}
+.CSSTableGenerator table tr:first-child td:last-child {
+	-moz-border-radius-topright:0px;
+	-webkit-border-top-right-radius:0px;
+	border-top-right-radius:0px;
+}.CSSTableGenerator tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:0px;
+	-webkit-border-bottom-left-radius:0px;
+	border-bottom-left-radius:0px;
+}.CSSTableGenerator tr:hover td{
+	
+}
+.CSSTableGenerator tr:nth-child(odd){ background-color:#bbbbbb; }
+
+.CSSTableGenerator tr:nth-child(even)    { background-color:#cccccc; }.CSSTableGenerator td{
+	vertical-align:top;
+	
+	
+	border:0px solid #3f7f00;
+	border-width:0px 1px 1px 0px;
+	text-align:left;
+	padding:6px;
+	font-size:14px;
+	font-family:Arial;
+	font-weight:normal;
+	color:#000000;
+}.CSSTableGenerator tr:last-child td{
+	border-width:0px 1px 0px 0px;
+}.CSSTableGenerator tr td:last-child{
+	border-width:0px 0px 1px 0px;
+}.CSSTableGenerator tr:last-child td:last-child{
+	border-width:0px 0px 0px 0px;
+}
+
+}
+.CSSTableGenerator tr:first-child td:last-child{
+	border-width:0px 0px 1px 1px;
+}
+
+

@@ -1,0 +1,67 @@
+
+     
+     .zero {
+  background-color: #ffffff;
+  color: black;
+}
+.eagle {
+background: #ffafaf;
+
+   color: black;
+               border-radius: 70%;
+	       width: 30px;
+	       height: 30px;
+            border: 3px solid #dddddd;
+}
+
+.birdie {
+  vertical-align: middle;
+        color: black;
+           background-color: #ff9191;
+        border: 3px solid #dddddd;
+        border-radius: 50%;
+	       width: 10px;
+	       height: 10px; 
+}
+
+.par {
+  background-color: #FFFFFF;
+  color: black;
+        border: 3px solid #dddddd;
+}
+
+.bogie {
+  background-color: #b5afff;
+        color: black;
+        border-radius: 4px; 
+        border: 3px solid #dddddd;
+}
+
+
+.doublebogie {
+  background-color: #968eff;
+  color: white;
+        border: 3px solid #dddddd;
+        border-radius: 6px; 
+}
+
+.triplebogie {
+    background-color:	#6e63ff;
+    color: white;
+         border: 3px solid #dddddd;
+        border-radius: 6px; 
+}
+
+
+.other {
+   background-color: #5245ff;
+   color: white;
+        border: 3px solid #dddddd;
+        border-radius: 6px; 
+}
+    
+
+
+
+  
+
