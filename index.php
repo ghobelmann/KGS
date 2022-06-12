@@ -113,8 +113,8 @@ $state = $_GET['state'];
 
 
 <?php
-error_reporting(E_ALL);
-session_start(); 
+//error_reporting(E_ALL);
+//session_start(); 
 
 //print_r($_SESSION);
 

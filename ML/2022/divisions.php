@@ -42,9 +42,7 @@ $logged_in = TRUE;
     <script type="text/javascript" src="https://cdn.ywxi.net/js/1.js" async></script>
     <style>
     body {background-color: black;}
-  #grad {
-  background: linear-gradient(white, gray);
-}
+
 </style>
 
 
@@ -79,7 +77,8 @@ function goBack() {
   <!-- Page Content -->
     <div id="grad" class="container">
 
-      <h1 class="my-4"><center>Smith Center Mens League 2020
+      <h1 class="my-4"><center>Smith Center Mens League 2022
+
 			</h1>
 
       <!-- Marketing Icons Section        -->
@@ -162,7 +161,8 @@ while($row = mysqli_fetch_array( $result )) {
 	echo "</td></tr>"; 
 } 
 echo "</table>";
-?><h3>C Player Statistics</h3>
+?>
+<h3>C Player Statistics</h3>
       <?php
 
 // Query for Driving Stats and Yardage
@@ -194,83 +194,9 @@ while($row = mysqli_fetch_array( $result )) {
 } 
 echo "</table>";
 ?>
-
-
-
-
-
-</td>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-</body>
-
-
-
-
-
-
-
-
-
-
-
-                       
-
-
-
-
-  </p>
+</td></p>
        
-</div>        </div></div></div>
-       
-
-	
-	
-	
-	
-
-	
-  </body>
+</div></div></div></div></body>
 
 
 
