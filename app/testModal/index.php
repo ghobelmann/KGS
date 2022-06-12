@@ -88,6 +88,7 @@ window.history.back();
     <div class="col-md-12">
         <div class="panel-body">
             <?php 
+            
                 include "../../databaseconnect.php";
                 if(!empty($_GET['id']))
                 {
@@ -125,7 +126,7 @@ echo '<h2><font color="white">'.$tname.'</font>';
 
 //echo '- BTYB -'.$btyb.''; 
 //echo '<br>Ties Not Broken On This Page, go to Tournament Results.</h2></center>';
-for($i=1; $i<=36; $i++)
+for($i=1; $i<=18; $i++)
 
 {
 $h[$i] = $data['hole'.$i];
